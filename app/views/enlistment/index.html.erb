@@ -1,0 +1,15 @@
+
+<body>
+    <div class="wrapper">
+    
+        <% @games.each do |game| %>
+            <%= link_to game_path(game) do %>
+                <div class="game_Enlistment" style="background-image: url(<%= game.image %>);">
+                    <p>
+                        <%= game.name %>
+                    </p>
+                </div>
+            <% end %>
+        <% end %>
+    </div>
+</body>
